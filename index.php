@@ -12,7 +12,7 @@ include 'admin/koneksi.php';
 <body>
   <div class="wrapper">
     <div class="logo">
-      <img src="admin/assets/images/A.png" alt=""><br/><br>
+      <img src="admin/assets/images/ieg.png" alt=""><br/><br>
     </div>
     <div class="text-center mt-4 name" style="font-size: 15px; text-align: center;">
       <?php echo $title; ?>

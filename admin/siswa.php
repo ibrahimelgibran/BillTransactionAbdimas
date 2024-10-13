@@ -104,7 +104,7 @@ if (!isset($_SESSION["login_type"])) {
               <span class="logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                  src="assets/images/abdimas.png" width="170px"
+                  src="assets/images/bg.png" width="170px"
                   alt="homepage"
                   class="light-logo"
                 />
@@ -501,7 +501,7 @@ if (!isset($_SESSION["login_type"])) {
                   <form method="get">
                     <div class="form-group">
                         <label for="tahun_ajaran">Pilih Tahun Ajaran:</label><br>
-                        <small><font color="red">Pilih Tahun Ajaran Untuk Menampilkan Data Atlet</font></small>
+                        <small><font color="red">Pilih Tahun Ajaran Untuk Menampilkan Data Siswa</font></small>
                         <select name="tahun_ajaran" id="tahun_ajaran" class="select2 form-select shadow-none" style="width: 100%; height: 36px">
                             <option selected disabled>Pilih Tahun Ajaran</option>
                             <?php 
@@ -512,7 +512,7 @@ if (!isset($_SESSION["login_type"])) {
                             <?php } ?>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Tampilkan Data Atlet</button>
+                    <button type="submit" class="btn btn-primary">Tampilkan Data Siswa</button>
                   </form>
                   <br>
 
@@ -533,14 +533,14 @@ if (!isset($_SESSION["login_type"])) {
                         <tr>
                           <th>No.</th>
                           <th>Tahun Ajaran</th>
-                          <th>Nama Atlet</th>
-                          <th>No Id Atlet</th>
+                          <th>Nama Siswa</th>
+                          <th>No Id Siswa</th>
                           <th>Kelas</th>
                           <th>Tgl. Lahir</th>
                           <th>Alamat</th>
                           <th>No.Hp/Wa</th>
                           <th>Email</th>
-                          <th>Foto Atlet</th>
+                          <th>Foto Siswa</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -587,7 +587,7 @@ if (!isset($_SESSION["login_type"])) {
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="siswaModalLabel">Tambah Data Atlet</h5>
+                      <h5 class="modal-title" id="siswaModalLabel">Tambah Data Siswa</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -596,7 +596,7 @@ if (!isset($_SESSION["login_type"])) {
                         <div class="col-md-6">
                           <h6>Data Pribadi:</h6>
                           <div class="mb-3">
-                            <label for="nama">Nama Atlet</label>
+                            <label for="nama">Nama Siswa</label>
                             <input type="text" class="form-control" id="nama" name="nama">
                           </div>
                           <div class="mb-3">
@@ -612,7 +612,7 @@ if (!isset($_SESSION["login_type"])) {
                             </select>
                           </div>
                           <div class="mb-3">
-                            <label for="nisn">No Id Atlet</label>
+                            <label for="nisn">No Id Siswa</label>
                             <input type="text" class="form-control" id="nisn" name="nisn">
                           </div>
                           <div class="mb-3">
@@ -647,7 +647,7 @@ if (!isset($_SESSION["login_type"])) {
                             <input type="email" class="form-control" id="email" name="email">
                           </div>
                           <div class="mb-3">
-                            <label for="foto">Upload Foto Atlet</label>
+                            <label for="foto">Upload Foto Siswa</label>
                             <input type="file" class="form-control" id="foto" name="foto">
                           </div>
                         </div>
@@ -671,7 +671,7 @@ if (!isset($_SESSION["login_type"])) {
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="siswaModalLabel">Edit Data Atlet</h5>
+                      <h5 class="modal-title" id="siswaModalLabel">Edit Data Siswa</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -681,7 +681,7 @@ if (!isset($_SESSION["login_type"])) {
                         <div class="col-md-6">
                           <h6>Data Pribadi:</h6>
                           <div class="mb-3">
-                            <label for="nama">Nama Atlet</label>
+                            <label for="nama">Nama Siswa</label>
                             <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $rs['nama_siswa']; ?>">
                           </div>
                           <div class="mb-3">
@@ -697,7 +697,7 @@ if (!isset($_SESSION["login_type"])) {
                             </select>
                           </div>
                           <div class="mb-3">
-                            <label for="nisn">No Id Atlet</label>
+                            <label for="nisn">No Id Siswa</label>
                             <input type="text" class="form-control" id="nisn" name="nisn" value="<?php echo $rs['nisn']; ?>">
                           </div>
                           <div class="mb-3">
@@ -732,7 +732,7 @@ if (!isset($_SESSION["login_type"])) {
                             <input type="email" class="form-control" id="email" name="email" value="<?php echo $rs['email']; ?>">
                           </div>
                           <div class="mb-3">
-                            <label for="foto">Upload Foto Atlet</label>
+                            <label for="foto">Upload Foto Siswa</label>
                             <input type="file" class="form-control" id="foto" name="foto">
                             <br>
                             <img src="<?php echo $rs['foto_siswa']; ?>" width="70px" height="70px">

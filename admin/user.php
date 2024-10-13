@@ -99,7 +99,7 @@ if (!isset($_SESSION["login_type"])) {
               <span class="logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                  src="assets/images/abdimas.png" width="170px"
+                  src="assets/images/bg.png" width="170px"
                   alt="homepage"
                   class="light-logo"
                 />

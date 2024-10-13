@@ -34,7 +34,7 @@
                   href="siswa.php"
                   aria-expanded="false"
                   ><i class="mdi mdi-school"></i
-                  ><span class="hide-menu">Atlet</span></a
+                  ><span class="hide-menu">Siswa</span></a
                 >
               </li>
               <li class="sidebar-item">

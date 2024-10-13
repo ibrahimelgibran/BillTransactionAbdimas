@@ -99,7 +99,7 @@ if (!isset($_SESSION["login_type"])) {
               <span class="logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                  src="assets/images/abdimas.png" width="170px"
+                  src="assets/images/bg.png" width="170px"
                   alt="homepage"
                   class="light-logo"
                 />
@@ -429,7 +429,7 @@ if (!isset($_SESSION["login_type"])) {
         <div class="page-breadcrumb">
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title">Tabel Atlet</h4>
+              <h4 class="page-title">Tabel Siswa</h4>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">

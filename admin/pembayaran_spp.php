@@ -104,7 +104,7 @@ if (!isset($_SESSION["login_type"])) {
               <span class="logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                 src="assets/images/abdimas.png" width="170px"
+                 src="assets/images/bg.png" width="170px"
                   alt="homepage"
                   class="light-logo"
                 />
@@ -462,7 +462,7 @@ if (!isset($_SESSION["login_type"])) {
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title mb-0">Filter Nis Atlet</h5>
+                  <h5 class="card-title mb-0">Filter Nis Siswa</h5>
                 </div>
                 <div class="container">
                   <form method="GET">
@@ -470,9 +470,9 @@ if (!isset($_SESSION["login_type"])) {
                       <div class="col-md-6">
                         <!-- Input NISN Siswa -->
                         <div class="form-group">
-                          <label for="nisn">NISN Atlet</label>
+                          <label for="nisn">NISN Siswa</label>
                           <select class="select2 form-select shadow-none" style="width: 100%; height: 36px" id="nisn" name="nisn">
-                            <option selected disabled>Pilih Nis Atlet</option>
+                            <option selected disabled>Pilih Nis Siswa</option>
                             <?php 
                             $datas = mysqli_query($koneksi, "SELECT * FROM tb_siswa");
                             while ($rs = mysqli_fetch_assoc($datas)){
@@ -545,7 +545,7 @@ if (!isset($_SESSION["login_type"])) {
               } else {
                   echo '<div class="alert alert-danger" role="alert">';
                   echo "<center>";
-                  echo "<b>Halo, Anda belum melakukan pembayaran Atlet</b>";
+                  echo "<b>Halo, Anda belum melakukan pembayaran Siswa</b>";
                   echo "</center>";
                   echo '</div>';
               }
@@ -553,13 +553,13 @@ if (!isset($_SESSION["login_type"])) {
 
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title mb-0">Tagihan SPP Atlet</h5>
+                  <h5 class="card-title mb-0">Tagihan SPP Siswa</h5>
                 </div>
                 <div class="table-responsive">
                   <table id="zero_config1" class="table table-striped table-bordered">
                     <thead class="thead-light">
                       <tr>
-                        <th scope="col">Nama Atlet</th>
+                        <th scope="col">Nama Siswa</th>
                         <th scope="col">Tahun Ajaran</th>
                         <th scope="col">Bulan Tagihan</th>
                         <th scope="col">Tahun Tagihan</th>
@@ -611,7 +611,7 @@ if (!isset($_SESSION["login_type"])) {
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title">Pembayaran Atlet</h5>
+                      <h5 class="modal-title">Pembayaran Siswa</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -622,7 +622,7 @@ if (!isset($_SESSION["login_type"])) {
                       <div class="row">
                         <div class="col-md-6">
                           <div class="mb-3">
-                            <label for="namaSiswa" class="form-label">Nama Atlet</label>
+                            <label for="namaSiswa" class="form-label">Nama Siswa</label>
                             <input type="text" class="form-control" id="namaSiswa" value="<?php echo $rdt['nama_siswa']; ?>" readonly>
                           </div>
                           <div class="mb-3">
@@ -666,7 +666,7 @@ if (!isset($_SESSION["login_type"])) {
 
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Data Pembayaran Atlet</h5>
+                  <h5 class="card-title">Data Pembayaran Siswa</h5>
                   <div class="table-responsive">
                     <table
                       id="zero_config"
@@ -730,7 +730,7 @@ if (!isset($_SESSION["login_type"])) {
               <?php }else{ ?>
                 <center>
                   <div class="alert alert-primary" role="alert">
-                    Silakan Select Nisn Atlet
+                    Silakan Select Nisn Siswa
                   </div>
                 </center>
               <?php } ?>

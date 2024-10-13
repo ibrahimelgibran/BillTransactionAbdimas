@@ -52,7 +52,7 @@ if (!isset($_SESSION["login_type"])) {
       </div>
     </div>
     <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- Main wrapper - style you can find in pages.sscss -->
     <!-- ============================================================== -->
     <div
       id="main-wrapper"
@@ -89,7 +89,7 @@ if (!isset($_SESSION["login_type"])) {
               <span class="mt-3logo-text ms-2">
                 <!-- dark Logo text -->
                 <img
-                  src="assets/images/abdimas.png" width="170px"
+                  src="assets/images/bg.png" width="170px"
                   alt="homepage"
                   class="light-logo"
                 />
@@ -404,7 +404,7 @@ if (!isset($_SESSION["login_type"])) {
                   <h1 class="font-light text-white">
                     <i class="mdi mdi-account"></i>
                   </h1>
-                  <h6 class="text-white">Kelas & Tingkat</h6>
+                  <h6 class="text-white">Kelas</h6>
                 </div>
               </div>
             </div>
@@ -415,7 +415,7 @@ if (!isset($_SESSION["login_type"])) {
                   <h1 class="font-light text-white">
                     <i class="mdi mdi-school"></i>
                   </h1>
-                  <h6 class="text-white">Atlet</h6>
+                  <h6 class="text-white">Siswa</h6>
                 </div>
               </div>
             </div>
