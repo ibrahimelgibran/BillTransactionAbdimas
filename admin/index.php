@@ -43,7 +43,7 @@ if (!isset($_SESSION["login_type"])) {
 
   <body>
     <!-- ============================================================== -->
-    <!-- Preloader - style you can find in ssSwspinners.css -->
+    <!-- Preloader - style you can find in ssSsswspinners.css -->
     <!-- ============================================================== -->
     <div class="preloader">
       <div class="lds-ripple">
